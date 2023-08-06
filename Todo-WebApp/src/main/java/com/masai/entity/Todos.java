@@ -21,6 +21,7 @@ import lombok.Setter;
 @Setter
 @Getter
 public class Todos {
+	
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Integer todoId;
@@ -36,4 +37,6 @@ public class Todos {
 	@ManyToOne(cascade = CascadeType.PERSIST, fetch = FetchType.LAZY)
 	@JoinColumn(name = "userId")
 	private Users user;
+	
+	
 }
