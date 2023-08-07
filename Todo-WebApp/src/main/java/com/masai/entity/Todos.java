@@ -2,7 +2,6 @@ package com.masai.entity;
 
 import com.masai.entity.Enums.Status;
 
-import jakarta.annotation.Nonnull;
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;
 import jakarta.persistence.EnumType;
@@ -26,7 +25,7 @@ public class Todos {
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Integer todoId;
 	
-	@Nonnull
+	
 	private String title;
 	private String description;
 	
