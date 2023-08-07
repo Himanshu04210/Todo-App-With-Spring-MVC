@@ -27,6 +27,7 @@ public class Users {
 	private String email;
 	
 	private String password;
+	private String mobileNo;
 	
 	@OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
 	private List<Todos> todos;
